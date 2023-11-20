@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1706.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingSimulation", "DrivingSimulation\DrivingSimulation.csproj", "{BBA84660-28B2-43D5-B66F-1897242988E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingSimulation.Tests", "DrivingSimulation.Tests\DrivingSimulation.Tests.csproj", "{0894E97B-D38B-45A1-A66A-A8F8EF66AAC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BBA84660-28B2-43D5-B66F-1897242988E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBA84660-28B2-43D5-B66F-1897242988E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBA84660-28B2-43D5-B66F-1897242988E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0894E97B-D38B-45A1-A66A-A8F8EF66AAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0894E97B-D38B-45A1-A66A-A8F8EF66AAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0894E97B-D38B-45A1-A66A-A8F8EF66AAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0894E97B-D38B-45A1-A66A-A8F8EF66AAC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
