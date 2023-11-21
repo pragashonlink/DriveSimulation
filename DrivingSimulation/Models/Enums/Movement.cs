@@ -4,7 +4,8 @@
 	{
 		RIGHT = 1,
 		LEFT = 2,
-		FORWARD = 3
+		FORWARD = 3,
+		INVALID = -1
 	}
 }
 
