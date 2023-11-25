@@ -1,5 +1,5 @@
 ﻿using DrivingSimulation.Models;
-using DrivingSimulation.Models.Eenums;
+using DrivingSimulation.Models.Enums;
 
 namespace DrivingSimulation.Tests.Models
 {

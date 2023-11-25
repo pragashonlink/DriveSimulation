@@ -1,4 +1,4 @@
-﻿namespace DrivingSimulation.Models.Eenums
+﻿namespace DrivingSimulation.Models.Enums
 {
 	public enum Movement
 	{

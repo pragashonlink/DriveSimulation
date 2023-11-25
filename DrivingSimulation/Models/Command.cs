@@ -1,4 +1,4 @@
-﻿using DrivingSimulation.Models.Eenums;
+﻿using DrivingSimulation.Models.Enums;
 
 namespace DrivingSimulation.Models
 {
@@ -11,9 +11,9 @@ namespace DrivingSimulation.Models
             _currentMovement = currentMovement;
 		}
 
-        public Movement NextMovement { get; set; }
+        public Movement? NextMovement { get; set; }
 
-        public Movement PreviousMovement { get; set; }
+        public Movement? PreviousMovement { get; set; }
 
         public Movement CurrentMovement
         {
