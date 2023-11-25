@@ -16,11 +16,15 @@
     <None Remove="Models\Enums\" />
     <None Remove="Application\" />
     <None Remove="Application\Drive\" />
+    <None Remove="Application\Drive\Strategy\" />
+    <None Remove="Application\Drive\Factory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Models\Enums\" />
     <Folder Include="Application\" />
     <Folder Include="Application\Drive\" />
+    <Folder Include="Application\Drive\Strategy\" />
+    <Folder Include="Application\Drive\Factory\" />
   </ItemGroup>
 </Project>

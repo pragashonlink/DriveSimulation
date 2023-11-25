@@ -25,9 +25,11 @@
 
   <ItemGroup>
     <None Remove="Models\" />
+    <None Remove="Application\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Application\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DrivingSimulation\DrivingSimulation.csproj" />

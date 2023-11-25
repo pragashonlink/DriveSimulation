@@ -1,6 +1,6 @@
 ﻿namespace DrivingSimulation.Models.Enums
 {
-	public enum Movement
+	public enum MovementType
 	{
 		RIGHT = 1,
 		LEFT = 2,

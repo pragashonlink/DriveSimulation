@@ -3,18 +3,17 @@ using DrivingSimulation.Models.Enums;
 
 namespace DrivingSimulation.Models
 {
-	public class UserMovement
+	public class UserMovementEntity
 	{
-        private readonly IList<Movement> userMovements;
+        private readonly IList<MovementType> userMovements;
 
-
-        public UserMovement(string movements)
+        public UserMovementEntity(string movements)
         {
-            userMovements = new List<Movement>();
+            userMovements = new List<MovementType>();
             ConvertUserInputToMovements(movements);
         }
 
-        public IList<Movement> GetMovements
+        public IList<MovementType> GetMovements
         {
             get
             {
@@ -30,16 +29,16 @@ namespace DrivingSimulation.Models
             }
         }
 
-        private Movement MapToMovement(char movement)
+        private MovementType MapToMovement(char movement)
         {
-            var movementsMapper = new Dictionary<char, Movement>()
+            var movementsMapper = new Dictionary<char, MovementType>()
             {
-                { 'F', Movement.FORWARD },
-                { 'L', Movement.LEFT },
-                { 'R', Movement.RIGHT }
+                { 'F', MovementType.FORWARD },
+                { 'L', MovementType.LEFT },
+                { 'R', MovementType.RIGHT }
             };
 
-            var mappedMovement = Movement.INVALID;
+            var mappedMovement = MovementType.INVALID;
 
             movementsMapper.TryGetValue(movement, out mappedMovement);
 

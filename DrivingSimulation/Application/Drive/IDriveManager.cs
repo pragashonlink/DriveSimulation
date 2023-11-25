@@ -6,7 +6,7 @@ namespace DrivingSimulation.Application.Drive
 {
 	public interface IDriveManager
 	{
-		void drive(MapBlock mapBlock, Direction direction, Command command);
+		void Drive(VehicleEntity vehicle, CommandEntity command);
 	}
 }
 

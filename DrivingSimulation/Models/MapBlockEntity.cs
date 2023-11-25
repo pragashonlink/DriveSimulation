@@ -1,11 +1,11 @@
 ﻿namespace DrivingSimulation.Models
 {
-	public class MapBlock
+	public class MapBlockEntity
 	{
         private readonly int positionX;
         private readonly int positionY;
 
-        public MapBlock(int positionX, int positionY)
+        public MapBlockEntity(int positionX, int positionY)
         {
             this.positionX = positionX;
             this.positionY = positionY;
@@ -27,10 +27,10 @@
             }
         }
 
-        public MapBlock NorthBlock { get; set; }
-        public MapBlock EastBlock { get; set; }
-        public MapBlock SouthBlock { get; set; }
-        public MapBlock WestBlock { get; set; }
+        public MapBlockEntity NorthBlock { get; set; }
+        public MapBlockEntity EastBlock { get; set; }
+        public MapBlockEntity SouthBlock { get; set; }
+        public MapBlockEntity WestBlock { get; set; }
     }
 }
 
