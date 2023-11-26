@@ -4,8 +4,8 @@ using DrivingSimulation.Models.Enums;
 
 namespace DrivingSimulation.Application.Drive
 {
-	public class DriveManager
-	{
+	public class DriveManager : IDriveManager
+    {
 		private readonly IDriveStrategyFactory driveStrategyFactory;
 
         public DriveManager(IDriveStrategyFactory driveStrategyFactory)

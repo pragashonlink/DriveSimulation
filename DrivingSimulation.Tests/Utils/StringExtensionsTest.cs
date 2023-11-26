@@ -1,13 +1,16 @@
-﻿using DrivingSimulation.Models;
-using DrivingSimulation.Models.Enums;
+﻿using DrivingSimulation.Models.Enums;
+using DrivingSimulation.Utils;
 
-namespace DrivingSimulation.Tests.Models
+namespace DrivingSimulation.Tests.Utils
 {
-	public class UserMovementEntityTest
+	public class StringExtensionsTest
 	{
         [Fact]
-        public void GetMovements_ReturnsMovement()
+        public void InputAsNumber_ReturnsIntFromString()
         {
+            var input = "FRLFFR";
+            var mappedMovements = input.InputToMovementType();
+
             var exepectedMovements = new List<MovementType>()
             {
                 MovementType.FORWARD,
@@ -17,9 +20,6 @@ namespace DrivingSimulation.Tests.Models
                 MovementType.FORWARD,
                 MovementType.RIGHT
             };
-
-            var userMovement = new UserMovementEntity(exepectedMovements);
-            var mappedMovements = userMovement.GetMovements;
 
             var isTrue = exepectedMovements.SequenceEqual(mappedMovements);
 

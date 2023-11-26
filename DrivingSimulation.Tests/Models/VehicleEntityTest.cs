@@ -12,7 +12,7 @@ namespace DrivingSimulation.Tests.Models
 
 			var vehicle = new VehicleEntity(expectedCurrentBlock, DrivingSimulation.Models.Enums.Direction.NORTH);
 
-			Assert.Equal(expectedCurrentBlock.GetPositionX, vehicle.GetCurrentBlock.GetPositionX);
+			Assert.Equal(expectedCurrentBlock.GetRow, vehicle.GetCurrentBlock.GetRow);
 		}
 
         [Fact]

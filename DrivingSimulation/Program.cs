@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DrivingSimulation.Application.Drive;
+using DrivingSimulation.Application.Drive.Factory;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using IHost host = CreateHostBuilder(args).Build();
@@ -8,7 +10,7 @@ var services = scope.ServiceProvider;
 
 try
 {
-    
+    //services.GetRequiredService<IGameSimulation>().Run();
 }
 catch (Exception ex)
 {
@@ -20,6 +22,7 @@ static IHostBuilder CreateHostBuilder(string[] args)
     return Host.CreateDefaultBuilder(args)
         .ConfigureServices((_, services) =>
         {
-            
+            services.AddSingleton<IDriveManager, DriveManager>();
+            services.AddSingleton<IDriveStrategyFactory, DriveStrategyFactory>();
         });
 }

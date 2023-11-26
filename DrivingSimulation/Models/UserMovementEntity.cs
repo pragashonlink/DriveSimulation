@@ -7,10 +7,9 @@ namespace DrivingSimulation.Models
 	{
         private readonly IList<MovementType> userMovements;
 
-        public UserMovementEntity(string movements)
+        public UserMovementEntity(IList<MovementType> movements)
         {
-            userMovements = new List<MovementType>();
-            ConvertUserInputToMovements(movements);
+            userMovements = movements;
         }
 
         public IList<MovementType> GetMovements
@@ -21,29 +20,29 @@ namespace DrivingSimulation.Models
             }
         }
 
-        private void ConvertUserInputToMovements(string movements)
-        {
-            foreach (var movement in movements)
-            {
-                userMovements.Add(MapToMovement(movement));
-            }
-        }
+        //private void ConvertUserInputToMovements(string movements)
+        //{
+        //    foreach (var movement in movements)
+        //    {
+        //        userMovements.Add(MapToMovement(movement));
+        //    }
+        //}
 
-        private MovementType MapToMovement(char movement)
-        {
-            var movementsMapper = new Dictionary<char, MovementType>()
-            {
-                { 'F', MovementType.FORWARD },
-                { 'L', MovementType.LEFT },
-                { 'R', MovementType.RIGHT }
-            };
+        //private MovementType MapToMovement(char movement)
+        //{
+        //    var movementsMapper = new Dictionary<char, MovementType>()
+        //    {
+        //        { 'F', MovementType.FORWARD },
+        //        { 'L', MovementType.LEFT },
+        //        { 'R', MovementType.RIGHT }
+        //    };
 
-            var mappedMovement = MovementType.INVALID;
+        //    var mappedMovement = MovementType.INVALID;
 
-            movementsMapper.TryGetValue(movement, out mappedMovement);
+        //    movementsMapper.TryGetValue(movement, out mappedMovement);
 
-            return mappedMovement;
-        }
+        //    return mappedMovement;
+        //}
     }
 }
 

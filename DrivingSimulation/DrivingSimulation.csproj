@@ -18,6 +18,10 @@
     <None Remove="Application\Drive\" />
     <None Remove="Application\Drive\Strategy\" />
     <None Remove="Application\Drive\Factory\" />
+    <None Remove="Utils\" />
+    <None Remove="Application\Simulation\" />
+    <None Remove="Utils\UserConsole\" />
+    <None Remove="Application\Circuit\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -26,5 +30,9 @@
     <Folder Include="Application\Drive\" />
     <Folder Include="Application\Drive\Strategy\" />
     <Folder Include="Application\Drive\Factory\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Application\Simulation\" />
+    <Folder Include="Utils\UserConsole\" />
+    <Folder Include="Application\Circuit\" />
   </ItemGroup>
 </Project>
